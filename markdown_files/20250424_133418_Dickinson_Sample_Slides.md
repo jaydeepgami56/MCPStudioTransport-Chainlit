@@ -1,1 +1,0 @@
-Error executing tool convert_to_markdown: [Errno 2] No such file or directory: '/C:/Dev/k8s/MCP/document_ingestion/client/originalfiles/20250424_133418_Dickinson_Sample_Slides.pptx'

@@ -41,8 +41,9 @@ The system requires a custom Markitdown MCP server image. Build it using:
 # Clone the Markitdown repo if needed
 cd mcp
 
+# use https://github.com/microsoft/markitdown/tree/main/packages/markitdown-mcp Markdown MCP to build docker image if you can't access markdown folder.
 # Build the image
-cd markitdown/packages/markitdown-mcp/
+cd markitdown/
 docker build -t markitdown-mcp-server .
 
 cd document-ingestion
@@ -129,9 +130,3 @@ model = OllamaModel(model_name="llama2")  # Instead of OpenAI
 When a document is uploaded via the Chainlit UI, a unique UUID is automatically generated for that file.
 You can retrieve the UUID by using the Recent Activity tool.
 
-To view document details:
-
-Use the /display <UUID> command
-or
-
-Use the Display Document tool with the corresponding UUID

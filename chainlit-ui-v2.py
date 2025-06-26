@@ -35,14 +35,6 @@ conversation_messages = None
 originals_dir = "originalfiles"
 markdown_dir = "markdown_files"
 
-# Initialize LangSmith client
-langsmith_client = LangSmithClient(
-    api_key=os.getenv("LANGSMITH_API_KEY","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"),
-    api_url=os.getenv("LANGSMITH_API_URL", "https://api.smith.langchain.com")
-)
-project_name = os.getenv("LANGSMITH_PROJECT", "LangGraph-MCP-Agents")
-
-
 # System prompt that guides the LLM's behavior and capabilities
 SYSTEM_PROMPT = """You are a helpful assistant capable of accessing external functions from multiple servers and engaging in casual chat. Use the responses from these function calls to provide accurate and informative answers. Be natural and hide the fact that you are using tools to access real-time information. Guide the user about available tools and their capabilities. Always utilize tools to access real-time information when required.
 
