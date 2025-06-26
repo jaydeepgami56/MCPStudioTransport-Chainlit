@@ -66,7 +66,7 @@ docker run -d -p 27017:27017 --name mongodb mongo
 Start the application with Chainlit:
 
 ```bash
-chainlit run client-test.py
+chainlit run chainlit-ui-v2.py
 ```
 
 This will launch the web interface at http://localhost:8000 by default.
