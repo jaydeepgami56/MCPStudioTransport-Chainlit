@@ -1,0 +1,4 @@
+# chainlit.yaml
+features:
+  files:
+    enable: true
